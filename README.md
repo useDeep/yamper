@@ -96,17 +96,17 @@ yamper currently offers three templates:
 
 ## :gear: API Reference
 
-### `to_html(md_file, output_file=None, template="standard-light")`
+### `to_html(md_file, output_file, template)`
 
 Converts a Markdown file to HTML.
 
 - `md_file`: Path to the input Markdown file
 - `output_file`: (Optional) Path to the output HTML file
-- `template`: (Optional) Template to use for HTML output
+- `template`: (Optional) Template to use for HTML output, default is standard-light
 
 Returns the HTML content as a string if `output_file` is not specified.
 
-### `to_tokens(md_file, output_file=None)`
+### `to_tokens(md_file, output_file)`
 
 Generates tokens from a Markdown file.
 
