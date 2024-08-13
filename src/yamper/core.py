@@ -11,12 +11,10 @@ def to_html(md_file, output_file=None, template="standard-light"):
     try:
         with open(md_file, 'r') as file:
             lex= Lexer(file)
-            # for i in lex.tokenize():
-            #     print(i)
             parser= Parser(lex.tokenize())
             renderer= parser.parse()
             html_content= renderer.to_html()
-            # print(html_content)
+
     except FileNotFoundError:
         print(f"Error: The file '{md_file}' was not found. Please check the file path.")
         return None

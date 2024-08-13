@@ -1,3 +1,4 @@
+# This file is not needed for the project, if's just to modify the github emoji api data
 import json
 import os
 

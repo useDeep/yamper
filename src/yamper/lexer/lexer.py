@@ -5,7 +5,6 @@ from .token import Token
 class Lexer:
     def __init__(self, file_obj):
         self.file_obj= file_obj
-        # self.lines= md.strip().split('\n')
         self.temp= (Token(TokenType.PARAGRAPH, ''))
         self.code_active= False
     
@@ -14,14 +13,9 @@ class Lexer:
             line= line.rstrip('\n')
             if line.startswith('```') or self.code_active:
                 if self.temp.value != '': yield self.temp
-                # self.code_active= not self.code_active
                 yield from self.handle_code_block(line)
             else:
                 yield from self.next_block_token(line)
-            #     if not self.code_active:
-            #         self.temp= (Token(TokenType.PARAGRAPH, ''))
-            #         continue
-            # yield from self.next_block_token(line)
         if self.temp and self.temp.value:
             yield self.temp
         yield Token(type=TokenType.EOF, value='')
