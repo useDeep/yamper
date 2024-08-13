@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-SkmBfuA2hqjzEVpmnMt/LINrjop3GKWqsuLSSB3e7iBmYK7JuWw4ldmmxwD9mdm2IRTTi0OxSAfEGvgEi0i2Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background-color: #1a1a1a;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            color: #ffffff;
+        }
+        code {
+            background-color: #2a2a2a;
+            color: #e0e0e0;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        pre {
+            background-color: #2a2a2a;
+            color: #e0e0e0;
+            padding: 1em;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        blockquote {
+            border-left: 4px solid #4a4a4a;
+            margin: 1em 0;
+            padding-left: 1em;
+            font-style: italic;
+        }
+        ul, ol {
+            padding-left: 2em;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #4a4a4a;
+            margin: 2em 0;
+        }
+        a {
+            color: #66b3ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .task-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .task-list-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5em;
+        }
+        .task-list-item input[type="checkbox"] {
+            margin-right: 0.5em;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #4a4a4a;
+            padding: 0.5em;
+            text-align: left;
+        }
+        th {
+            background-color: #2a2a2a;
+        }
+        .alert {
+            padding: 1em;
+            border-radius: 4px;
+            margin-bottom: 1em;
+        }
+        .alert-info {
+            background-color: #1a3a5a;
+            border: 1px solid #2a5a8a;
+            color: #a0c8ff;
+        }
+        footer {
+            margin-top: 3em;
+            text-align: center;
+            font-size: 0.9em;
+            color: #999;
+        }
+    </style>
+    <title>example</title>
+</head>
+<body>
+    <div><h1>Linux: The Open Source Revolution &#x1f427;</h1><p>
+<img src="https://c4.wallpaperflare.com/wallpaper/393/843/638/linux-logo-open-source-penguins-wallpaper-preview.jpg" alt="Tux, the Linux mascot" title="" /></p><h2>Introduction to Linux &#x1f4bb;</h2><p>
+Linux is a free and open-source operating system kernel first released on September 17, 1991, by Linus Torvalds. It has since become one of the most widely used operating systems, powering everything from smartphones to supercomputers. &#x1f680;</p><blockquote>"Linux is only free if your time has no value." - Jamie Zawinski</blockquote><p>
+Despite this humorous quote, many find that investing time in learning Linux pays off in the long run! &#x1f4aa;</p><h2>Key Features of Linux &#x2b50;</h2><ol><li><strong>Open Source</strong>: The source code is freely available for anyone to view, modify, and distribute. &#x1f513;</li><li><strong>Multiuser</strong>: Allows multiple users to access a computer's resources simultaneously. :busts<em>in</em>silhouette:</li><li><strong>Multitasking</strong>: Can run multiple programs concurrently. &#x2699;</li><li><strong>Security</strong>: Robust security model with user permissions and encryption support. &#x1f512;</li><li><strong>Stability</strong>: Known for its stability and reliability, especially in server environments. &#x1f199;</li></ol><h2>Popular Linux Distributions &#x1f4e6;</h2><ul><li>Ubuntu &#x1f7e0;</li><li>Fedora &#x1f7e2;</li><li>Debian &#x1f534;</li><li>CentOS &#x26aa;</li><li>Arch Linux &#x26ab;</li></ul><h2>Basic Linux Commands &#x2328;</h2><p>
+Here are some essential Linux commands:</p><pre><code class="language-bash">ls       # List directory contents
+cd       # Change directory
+pwd      # Print working directory
+mkdir    # Make directory
+rm       # Remove files or directories
+cp       # Copy files or directories
+mv       # Move or rename files or directories
+chmod    # Change file permissions
+sudo     # Execute a command with superuser privileges
+</code></pre><p>
+Use the <code>man</code> command to get help on any command, like this: <code>man ls</code></p><h2>File System Hierarchy &#x1f4c1;</h2><p>
+Linux follows a standard directory structure:</p><ol><li><code>/</code> (root): The top-level directory &#x1f3e0;</li><li><code>/home</code>: User home directories &#x1f46a;</li><li><code>/etc</code>: System configuration files &#x1f527;</li><li><code>/var</code>: Variable data (logs, temp files) :page<em>facing</em>up:</li><li><code>/bin</code>: Essential command binaries &#x1f528;</li><li><code>/usr</code>: User utilities and applications &#x1f9f0;</li></ol><h2>Process Management &#x1f39b;</h2><p>
+Linux provides powerful tools for managing processes:</p><ul><li><code>ps</code>: List running processes</li><li><code>top</code>: Display system processes in real-time</li><li><code>kill</code>: Terminate a process</li></ul><p>
+Example of using <code>ps</code>:</p><p>
+<code>ps aux | grep nginx</code></p><p>
+This command lists all processes and filters for those containing "nginx".</p><h2>Package Management &#x1f4e6;</h2><p>
+Different Linux distributions use various package managers:</p><ul><li>Ubuntu: apt &#x2b07;</li><li>Fedora: dnf &#x2b07;</li><li>CentOS: yum &#x2b07;</li><li>Arch Linux: pacman &#x2b07;</li></ul><h2>Shell Scripting &#x1f41a;</h2><p>
+Bash (Bourne Again SHell) is the most common shell in Linux. Here's a simple bash script:</p><pre><code class="language-bash">#!/bin/bash
+
+echo "Hello, Linux!" :wave:
+
+for i in {1..5}
+do
+   echo "Count: $i"
+done
+</code></pre><h2>System Monitoring &#x1f4ca;</h2><p>
+Linux provides various tools for system monitoring:</p><div><input type="checkbox" disabled="true" checked="checked" /><label>htop: Interactive process viewer</label></div><div><input type="checkbox" disabled="true" checked="checked" /><label>iotop: I/O monitoring</label></div><div><input type="checkbox" disabled="true" /><label>netstat: Network statistics (to be covered later)</label></div><h2>The Power of Open Source &#x1f50c;</h2><p>
+Linux embodies the spirit of open source software, which offers several advantages:</p><ol><li><strong>Transparency</strong>: Anyone can inspect the code. &#x1f50d;</li><li><strong>Community-driven</strong>: Developers worldwide contribute to its improvement. :globe<em>with</em>meridians:</li><li><strong>Customizability</strong>: Users can modify the system to suit their needs. &#x1f3a8;</li><li><strong>Cost-effective</strong>: Most distributions are free to use. &#x1f4b0;</li></ol><h2>Linux in Various Environments &#x1f5fa;</h2><p>
+Linux is versatile and can be found in many computing environments:</p><ul><li><strong>Servers</strong>: Powers much of the internet's infrastructure &#x1f9e0;</li><li><strong>Desktops</strong>: Provides a free alternative to commercial operating systems &#x1f5a5;</li><li><strong>Embedded Systems</strong>: Used in IoT devices, routers, and more &#x1f4e1;</li><li><strong>Supercomputers</strong>: Dominates in high-performance computing &#x1f9b8;</li></ul><h2>Getting Started with Linux &#x1f530;</h2><p>
+If you're new to Linux, here are some steps to get started:</p><ol><li>Choose a beginner-friendly distribution (like Ubuntu or Linux Mint) &#x1f914;</li><li>Create a bootable USB drive &#x1f58a;</li><li>Install Linux (you can dual-boot with your existing OS) &#x1f4be;</li><li>Explore the GUI and terminal &#x1f50e;</li><li>Learn basic commands and system administration tasks &#x1f4da;</li></ol><h2>Advanced Linux Topics &#x1f393;</h2><p>
+For those looking to dive deeper, consider exploring:</p><ul><li>Kernel compilation &#x2699;</li><li>System security hardening &#x1f6e1;</li><li>Networking and firewall configuration &#x1f51b;</li><li>Virtualization and containerization &#x1f4e6;</li></ul><h2>The Future of Linux &#x1f52e;</h2><p>
+Linux continues to evolve, with exciting developments in areas such as:</p><ul><li>Cloud computing &#x2601;</li><li>Artificial Intelligence and Machine Learning &#x1f916;</li><li>Internet of Things (IoT) &#x1f4a1;</li><li>Mobile computing &#x1f4df;</li></ul><hr /><h2>Conclusion &#x1f3c1;</h2><p>
+Linux has come a long way since its inception and continues to play a crucial role in the computing landscape. Its flexibility, security, and community support make it an excellent choice for a wide range of applications.</p><!-- This comment won't be visible in the rendered Markdown --><p>
+<em>Whether you're a beginner or an experienced user, there's always something new to learn in the world of Linux!</em></p><p>
+<strong><em>Happy Linux-ing!</strong></em> &#x1f427; &#x1f4bb;</p></div>
+    <footer>
+        <p class="credit">Crafted with ❤️ using <a href="https://github.com/useDeep/yamper" target="_blank">yamper</a> </p>
+    </footer>
+</body>
+</html>
