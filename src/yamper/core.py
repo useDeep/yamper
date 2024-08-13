@@ -42,6 +42,7 @@ def to_html(md_file, output_file=None, template="standard-light"):
         except OSError as e:
             print(f"Error: An OS error occurred while trying to write to the file '{output_file}'.\nDetails: {e}")
             return None
+        print(f"HTML is generated at: {output_file}")
     else:
         return html_content
 
@@ -70,7 +71,7 @@ def to_tokens(md_file, output_file=None):
         except OSError as e:
             print(f"Error: An OS error occurred while trying to write to the file '{output_file}'.\nDetails: {e}")
             return None
-
+        print(f"Tokens are generated at: {output_file}")
     else:
         return tokens
 
@@ -78,5 +79,5 @@ def to_tokens(md_file, output_file=None):
 
 # filepathref= '/home/deepak/projects/yamper/example.md'
 
-# html= to_tokens(filepathref, ' hello   ')
+# html= to_tokens(filepathref, ' hello.html   ')
 # print(html)
