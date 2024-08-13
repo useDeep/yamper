@@ -23,6 +23,3 @@ yamper = "yamper.cli:main"
 [project.urls]
 Homepage = "https://github.com/useDeep/yamper"
 Issues = "https://github.com/useDeep/yamper/issues"
-
-[tool.hatch.build.targets.wheel]
-packages = ["src/yamper"]
